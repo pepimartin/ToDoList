@@ -1,4 +1,4 @@
-nos podemos hacer
+
 const tasksList= document.querySelector("#tasksList);
 
 // 3)

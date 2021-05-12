@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ToDoListApplication {
     private final String task;
     public Tasks (String task){
+
         this.task = task;
     }
     public String getTask() {
