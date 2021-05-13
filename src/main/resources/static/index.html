@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>WEEK#5-ToDoList</title>
+    <title>ToDoList</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <div id="container">
-        <input id="todo" type="text" placeholder="I want to...">
-        <button id="buttonAdd" ><i class="fas fa-plus"></i></button>
-
+    <header></header>
+    <div class="container">
+        <form action="/tasks" method="post">
+           <div id="taskList"></div>
+            <div>
+                <input id="todo" type="text" placeholder="I want to...">
+                <input id="submit" type="submit" value="+">
+            </div>
+        </form>
     </div>
-
 
 <script src="js/main.js"></script>
 </body>
