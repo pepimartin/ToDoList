@@ -2,20 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDoList</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <header></header>
-    <div class="container">
-        <form action="/tasks" method="post">
-           <div id="taskList"></div>
-            <div>
-                <input id="todo" type="text" placeholder="I want to...">
-                <input id="submit" type="submit" value="+">
+    <main>
+        <form class="todoForm" action="/tasks" method="post">
+           <div id="taskList">
+               <input type="radio" id="vehicle1" name="vehicle1" value="Bike">
+               <label for="vehicle1"> I have a bike</label><br>
+
+           </div>
+            <div class="bottomBar">
+                <input id="todo" class="inputTask" type="text" placeholder="I want to...">
+                <input id="submit" class="submitButton" type="submit" value="+">
             </div>
         </form>
-    </div>
+    </main>
 
 <script src="js/main.js"></script>
 </body>

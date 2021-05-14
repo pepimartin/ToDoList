@@ -1,0 +1,60 @@
+body {
+    background-color: #FFF;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    background-color: #E1701A;
+    box-shadow: 0 6px 6px -6px #999999;
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 15vh;
+}
+#taskList {
+    padding: 50px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    height: 60vh;
+    align-self: flex-end;
+    overflow: hidden;
+}
+.bottomBar {
+    background-color: #f6f6f6;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+.inputTask {
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid #f6f6f6;
+    margin-right: 10px;
+    padding: 5px 35px;
+}
+.todoForm input[type=text] {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+}
+.submitButton {
+    background-color: #F7A440;
+    border-radius: 18px;
+    border: 1px solid #f6f6f6;
+    font-size: 30px;
+    font-weight: 500;
+    color: #f6f6f6;
+    width: 35px;
+    height: 35px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
