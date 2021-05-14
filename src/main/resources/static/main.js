@@ -1,6 +1,11 @@
 const listToDo = document.getElementById("taskList");
 
-function addTasks() {
+
+/*
+ -------------------------------------- codigo
+ function addTasks() {
+
+
     fetch("/tasks").then(res => res.json()).then(function (tasks) {
         tasks.forEach((task, i) => {
             const element = `<div class="task" id="task-${i}">${task.description}</div>`;
@@ -14,8 +19,10 @@ document.addEventListener("DOMContentLoaded", addTasks);
 
 
 
+------------- equipo 6 codigo
 
-/*/const taskField = document.getElementById("todo");
+
+const taskField = document.getElementById("todo");
 const list = document.getElementById("taskList");
 const submitBtn = document.getElementById("submit");
 
