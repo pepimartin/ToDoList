@@ -1,21 +1,15 @@
 const listToDo = document.getElementById("taskList");
 
-
-/*
- -------------------------------------- codigo
- function addTasks() {
-
-
-    fetch("/tasks").then(res => res.json()).then(function (tasks) {
-        tasks.forEach((task, i) => {
-            const element = `<div class="task" id="task-${i}">${task.description}</div>`;
-            listToDo.insertAdjacentHTML("beforeend", element);
-            document.getElementById("task-${i}").addEventListener("click", deleteToDo())
-        })
-    })
+function addTask(tasks){
+    tasks.forEach(task => {
+        const element = `<div id="tasklist"`
+    }
 }
 
-document.addEventListener("DOMContentLoaded", addTasks);
+
+
+
+
 
 
 
