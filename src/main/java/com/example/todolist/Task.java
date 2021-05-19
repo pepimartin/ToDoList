@@ -1,14 +1,16 @@
 package com.example.todolist;
 
 public class Task {
-    private final String todo;
+    private final String tasks;
 
-    public Task(String todo) {
-        this.todo = todo;
+    public Task(String tasks) {
+
+        this.tasks = tasks;
     }
 
     public String getTask() {
-        return todo;
+
+        return tasks;
     }
 }
 
