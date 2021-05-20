@@ -14,15 +14,8 @@ function addTask(tasks) {
     })
 }
 const submitButton = document.getElementById("submit");
-const validateHomework = (event) => {
-    const homework = event.target.value;
-    if (homework.length < 3) {
-        submitButton.disabled = true;
-    } else {
-        submitButton.disabled = false;
-    }
-}
-submitButton.addEventListener("click" , validateHomework);
+submitButton.addEventListener("click",addTask);
+
 
 let reloadTasks = () => {
     fetch("/")
@@ -31,3 +24,4 @@ let reloadTasks = () => {
 };
 
 document.addEventListener("DOMContentLoaded", reloadTasks )
+
