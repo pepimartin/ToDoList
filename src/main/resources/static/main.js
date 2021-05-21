@@ -8,7 +8,7 @@ function addTask(tasks) {
             <div class="task__button" 
             onclick="fetch(\`/tasks/${position}\`, 
             { method: 'DELETE'}).then(reloadTasks)"></div>
-            <p class="task__label"></p>
+            <p class="taskLabel">${task.taskLabel}</p>
             </div>`;
         taskList.appendChild(htmlElement)
     })
@@ -18,7 +18,7 @@ submitButton.addEventListener("click",addTask);
 
 
 let reloadTasks = () => {
-    fetch("/")
+    fetch("/tasks")
         .then (r => r.json())
         .then(addTask)
 };
