@@ -1,16 +1,16 @@
 package com.example.todolist;
 
 public class Task {
-    private final String tasks;
+    private final String formInput;
 
     public Task(String tasks) {
 
-        this.tasks = tasks;
+        this.formInput = tasks;
     }
 
     public String getTask() {
 
-        return tasks;
+        return formInput;
     }
 }
 
