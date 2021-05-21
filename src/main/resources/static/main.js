@@ -8,7 +8,7 @@ function addTask(tasks) {
             <div class="task__button" 
             onclick="fetch(\`/tasks/${position}\`, 
             { method: 'DELETE'}).then(reloadTasks)"></div>
-            <p class="taskLabel">${task.formInput}</p>
+            <p class="taskLabel">${task.description}</p>
             </div>`;
         taskList.appendChild(htmlElement)
     })

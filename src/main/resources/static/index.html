@@ -9,13 +9,10 @@
 <body>
     <header></header>
     <main>
+        <div id="taskList"></div>
         <form class="todoForm" action="/tasks" method="post">
-           <div id="taskList"></div>
-            <div class="bottomBar">
-                <label for="formInput"></label>
-                <input id="formInput" name="formInput" class="inputTask" type="text" placeholder="I want to...">
-                <input id="submit" class="submitButton" onclick="submitButton" type="submit" value="+">
-            </div>
+                <input id="description" name="description"  type="text" placeholder="I want to...">
+                <input id="submit" type="submit" value="+">
         </form>
     </main>
 
