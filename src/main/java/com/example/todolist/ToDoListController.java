@@ -2,6 +2,7 @@ package com.example.todolist;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.view.RedirectView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +17,9 @@ public class ToDoListController {
     }
 
     @PostMapping("/tasks")
-    public void addTask(Task task) {
+
+    public RedirectView addTask(Task task) {
         tasks.add(task);
+        return new RedirectView("/");
     }
 }

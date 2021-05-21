@@ -1,5 +1,5 @@
 const taskList = document.querySelector("#taskList");
-
+const submitButton = document.getElementById("submit");
 function addTask(tasks) {
     taskList.innerHTML = "";
     tasks.forEach((task, position) => {
@@ -8,14 +8,11 @@ function addTask(tasks) {
             <div class="task__button" 
             onclick="fetch(\`/tasks/${position}\`, 
             { method: 'DELETE'}).then(reloadTasks)"></div>
-            <p class="taskLabel">${task.taskLabel}</p>
+            <p class="taskLabel">${task.task}</p>
             </div>`;
         taskList.appendChild(htmlElement)
     })
 }
-const submitButton = document.getElementById("submit");
-submitButton.addEventListener("click",addTask);
-
 
 let reloadTasks = () => {
     fetch("/tasks")
