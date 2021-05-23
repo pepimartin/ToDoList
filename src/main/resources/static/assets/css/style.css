@@ -5,6 +5,7 @@ body {
     color: #000;
     font-size: 20px;
     font-weight: 400;
+    font-family: sans-serif;
 }
 header {
     background-color: #E1701A;
@@ -12,40 +13,63 @@ header {
     padding: 20px;
     height: 10vh
 }
+/* Tasklist */
 #taskList {
-    display: flex;
-    align-items: center;
-    padding: 50px;
     color: #333;
+    padding: 50px;
+}
+.task {
+    display: flex;
+    color: #333;
+    align-items: baseline;
 }
 .task__button {
     height:10px;
     width: 10px;
-    border: 1px solid #333333;
+    border: 2px solid #666;
     border-radius: 50%;
-    margin-right: 5px;
 }
-.todoForm {
+.task__button:hover {
+    background-color: #F7A440;
+    border: 2px solid #F7A440;
+}
+.task__label {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #666;
+    letter-spacing: 1px;
+    margin: 10px 15px;
+    text-transform: capitalize;
+}
+/* To-Do Form */
+.todo__form {
     background-color: #f6f6f6;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    padding: 20px;
+    max-width: 100%;
+    padding: 10px;
 }
-
+.todoForm {
+    display: flex;
+    align-items: center;
+}
 #description {
     border-radius: 25px;
     border: 1px solid #f6f6f6;
     margin-right: 5px;
-    padding: 15px 40px;
+    padding: 10px 30px;
     font-size: 18px;
-    width: 250px;
+    width: 290px;
 }
 #submit {
     background-color: #F7A440;
+    border: 1px solid #F7A440;
     border-radius: 50%;
-    border: none;
-    font-size: 30px;
+    font-size: 35px;
+    line-height: 1;
     color: #f6f6f6;
-    padding: 5px;
+    width: 40px;
+    height: 40px;
+    padding: 0 0 5px 0;
+
 }

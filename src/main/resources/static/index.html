@@ -10,10 +10,12 @@
     <header></header>
     <main>
         <div id="taskList"></div>
-        <form class="todoForm" action="/tasks" method="post">
-                <input id="description" name="description"  type="text" placeholder="I want to...">
+        <div class="todo__form">
+            <form class="todoForm" action="/tasks" method="post">
+                <input id="description" name="description" type="text" placeholder="I want to...">
                 <input id="submit" type="submit" value="+">
-        </form>
+            </form>
+        </div>
     </main>
 
     <script src="main.js"></script>
