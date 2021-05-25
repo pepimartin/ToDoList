@@ -17,7 +17,7 @@ alt="Markdown Instagram icon" height="40" width="40"/></a>
 <img src="https://i.imgur.com/keBRMoh.png"
 alt="Markdown Instagram icon" height="40" width="40"/></a>
 
-1. HTML5 & CSS
+1. HTML5 & CSS3
 2. Javascript
 3. JAVA(Springboot framework)
 ## Tools used for this project :
