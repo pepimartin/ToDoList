@@ -1,6 +1,6 @@
-#GROUP 6: To-Do list 
+# GROUP 6: To-Do list 
 
-##Description: 
+## Description: 
 > This project consists of making a shared server *"To-Do List"* application using the <a href="https://www.jrebel.com/blog/what-is-spring-boot#:~:text=Spring%20Boot%20is%20an%20open,prebuilt%20code%20within%20its%20codebase.">*Springboot framework*</a>.
 
 ## Languages used: 
