@@ -1,7 +1,5 @@
 package com.example.todolist;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.view.RedirectView;
 
 import java.util.ArrayList;
@@ -22,4 +20,10 @@ public class ToDoListController {
         tasks.add(task);
         return new RedirectView("/");
     }
+
+    @DeleteMapping("/tasks/{index}")
+    void deleteTask(@PathVariable int index) {
+        tasks.remove(index);
+    }
+
 }
