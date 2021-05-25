@@ -11,7 +11,16 @@ header {
     background-color: #E1701A;
     box-shadow: 0 6px 6px -6px #999999;
     padding: 20px;
-    height: 10vh
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button__refresh {
+    background-image: url("assets/img/reload.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 main {
     width: 100%;
