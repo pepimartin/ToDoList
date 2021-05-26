@@ -22,3 +22,14 @@ let reloadTasks = () => {
 
 document.addEventListener("DOMContentLoaded", reloadTasks )
 
+const toDoInput = document.getElementById("description");
+
+const validateTask = (event) => {
+    const description = event.target.value;
+    if (description.length < 3) {
+        submitButton.disabled = true;
+    } else {
+        submitButton.disabled = false;
+    }
+}
+toDoInput.addEventListener("input" , validateTask);
