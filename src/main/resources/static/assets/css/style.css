@@ -7,16 +7,16 @@ body {
     font-weight: 400;
     font-family: sans-serif;
 }
-header {
+nav {
     background-color: #E1701A;
     box-shadow: 0 6px 6px -6px #999999;
     padding: 0 20px;
     height: 10vh;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
 }
-.button__refresh, .button__checklist {
+.button__refresh, .button__checklist, .button__previous {
     background-image: url("../img/refresh.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -27,6 +27,24 @@ header {
 }
 .button__checklist {
     background-image: url("../img/checklist.svg");
+}
+.button__previous {
+    background-image: url("../img/arrowBack.svg");
+    background-position: left;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 300;
+    text-indent: 20px;
+    width: 350px;
+    letter-spacing: 1px;
+    padding-left: 70px;
+    text-decoration: none;
+}
+p {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center ;
 }
 main {
     width: 100%;
@@ -59,7 +77,6 @@ main {
     color: #666;
     letter-spacing: 1px;
     margin: 10px 15px;
-    text-transform: capitalize;
 }
 /* To-Do Form */
 .todo__form {
