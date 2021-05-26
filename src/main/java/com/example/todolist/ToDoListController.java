@@ -2,23 +2,27 @@ package com.example.todolist;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.view.RedirectView;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 @RestController
 public class ToDoListController {
-    private final List<Task> tasks = new ArrayList<>();
 
-    @GetMapping("/tasks")
-    public List<Task> showTasks() {
-        return tasks;
+    private Map<Integer,Task> tasks;
+    private Integer counter = 0;
+
+    public ToDoListController(){
+        tasks = new HashMap<>();
     }
 
-    @PostMapping("/tasks")
 
-    public RedirectView addTask(Task task) {
-        tasks.add(task);
-        return new RedirectView("/");
+    @GetMapping("/tasks")
+    public Map<Integer,Task> allTasks() {return tasks;}
+
+    @PostMapping("/tasks")
+    public RedirectView addnewTask(Task task){
+        tasks.put(counter++,task);
+        return new RedirectView("/pages/completed.html");
     }
 
     @DeleteMapping("/tasks/{index}")
