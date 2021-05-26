@@ -16,7 +16,7 @@ nav {
     align-items: baseline;
     justify-content: space-between;
 }
-.button__refresh, .button__checklist, .button__previous {
+.button__refresh, .button__checklist {
     background-image: url("../img/refresh.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -24,6 +24,7 @@ nav {
     height: 45px;
     border: none;
     background-color: #E1701A;
+    cursor: pointer;
 }
 .button__checklist {
     background-image: url("../img/checklist.svg");
@@ -31,21 +32,19 @@ nav {
 .button__previous {
     background-image: url("../img/arrowBack.svg");
     background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
     color: #FFF;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 300;
     text-indent: 20px;
     width: 350px;
+height: 45px;
     letter-spacing: 1px;
-    padding-left: 70px;
+    padding-left: 60px;
     text-decoration: none;
 }
-p {
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center ;
-}
+
 main {
     width: 100%;
     display: flex;
