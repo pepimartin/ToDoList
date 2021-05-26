@@ -10,10 +10,10 @@ body {
 nav {
     background-color: #E1701A;
     box-shadow: 0 6px 6px -6px #999999;
-    padding: 20px;
+    padding: 10px 20px 0;
     height: 10vh;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
 }
 .button__refresh, .button__checklist {
@@ -36,12 +36,12 @@ nav {
     background-size: contain;
     color: #FFF;
     font-size: 22px;
+    line-height: 44px;
     font-weight: 300;
-    text-indent: 20px;
     width: 350px;
-height: 45px;
+    height: 45px;
     letter-spacing: 1px;
-    padding-left: 60px;
+    padding-left: 80px;
     text-decoration: none;
 }
 
