@@ -9,21 +9,18 @@ import java.util.Map;
 
 @RestController
 public class ToDoListController {
-    private Map<Integer,Task> tasks;
-    private Integer counter = 0;
-    public ToDoListController() {
-        tasks = new HashMap<>();
-    }
+    private final List<Task> tasks = new ArrayList<>();
+
 
     @GetMapping("/tasks")
-    public Map<Integer, Task> allTasks() {
+    public List<Task> showTasks() {
         return tasks;
     }
 
     @PostMapping("/tasks")
 
     public RedirectView addTask(Task task) {
-        tasks.put(counter++, task);
+        tasks.add(task);
         return new RedirectView("/");
     }
 
