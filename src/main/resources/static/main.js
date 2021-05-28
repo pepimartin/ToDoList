@@ -18,20 +18,21 @@ let reloadTasks = () => {
     fetch("/tasks")
         .then (r => r.json())
         .then(addTask)
-};
+}
 
-document.addEventListener("DOMContentLoaded", reloadTasks )
+document.addEventListener("DOMContentLoaded", reloadTasks );
 
-/*
 const validateHomework = (event) => {
     const description = event.target.value;
     if (description.length < 3) {
         submitButton.disabled = true;
-    } else {
+    }
+    else {
         submitButton.disabled = false;
     }
 }
-submitButton.addEventListener("click" , validateHomework);
-*/
+
+submitButton.addEventListener("input", validateHomework);
+
 
 
