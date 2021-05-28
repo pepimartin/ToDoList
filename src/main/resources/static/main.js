@@ -22,6 +22,7 @@ let reloadTasks = () => {
 
 document.addEventListener("DOMContentLoaded", reloadTasks )
 
+/*
 const validateHomework = (event) => {
     const description = event.target.value;
     if (description.length < 3) {
@@ -31,5 +32,6 @@ const validateHomework = (event) => {
     }
 }
 submitButton.addEventListener("click" , validateHomework);
+*/
 
-let reloadCompletedItems
+
